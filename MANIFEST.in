@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include android_app *.css
+recursive-include android_app *.csv
+recursive-include android_app *.html
+recursive-include android_app *.ico
+recursive-include android_app *.js
+recursive-include android_app *.json
+recursive-include android_app *.md
+recursive-include android_app *.png
+recursive-include android_app *.py
+recursive-include android_app *.svg
+recursive-include android_app *.txt
+recursive-exclude android_app *.pyc
