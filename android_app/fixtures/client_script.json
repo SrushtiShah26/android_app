@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Driver",
+  "enabled": 1,
+  "modified": "2023-02-27 15:47:34.793017",
+  "module": "android_app",
+  "name": "Driver User",
+  "script": "frappe.ui.form.on('Driver', {\n\tandroid_user_(frm) {\n\t   // alert(\"Hello This is Android User\");\n\t    var cell_number = cur_frm.doc.cell_number;\n\t    var email = cell_number+\"@gmail.com\";\n\t\tvar first_name = cur_frm.doc.full_name;\n// \t\tconsole.log(email);\n// \t\tconsole.log(first_name);\n\t\tvar new_password = \"Sanskar\";\n        // var b =\"Hey\";\n\t\tfrappe.call({\n    \t\t        method:\"android_app.apisend.android_user_creation\", \n    \t\t        args: {\"email\":email, \"new_password\":new_password, \"cell_number\":cell_number},\n    \t\t    }).then(records => {\n\t                 var a=records[\"msg\"];\n    \t\t      //   alert(a);\n    \t\t         cur_frm.set_value(\"user\", a);\n    \t\t         cur_frm.save();\n\n\t        });\n\n\t}\n});",
+  "view": "Form"
+ }
+]

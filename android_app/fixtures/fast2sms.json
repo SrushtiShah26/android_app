@@ -1,0 +1,14 @@
+[
+ {
+  "authorization": "ex8a4rwZipL9Iyho3mQBtKYTGNXkl1OMbsq7WJd60FVfuj5DcEsc1u3ADV4Lpl6HIeQXofaYtC8E7kqd",
+  "docstatus": 0,
+  "doctype": "Fast2SMS",
+  "flash": "\"0\"",
+  "language": "\"english\"",
+  "modified": "2023-02-27 12:24:17.339796",
+  "name": "Fast2SMS",
+  "route": "dlt",
+  "sender_id": "Migooo",
+  "url": "https://www.fast2sms.com/dev/bulkV2"
+ }
+]

@@ -199,3 +199,31 @@ app_license = "MIT"
 # auth_hooks = [
 #	"android_app.auth.validate"
 # ]
+
+fixtures=[
+    # "Client Script","Item","Website Theme"
+
+     {"dt": "Client Script", },
+     {"dt": "Fast2SMS", },
+     {"dt": "Custom Field", "filters": [
+        [
+            "module", "in", [
+                "android_app"
+            ]
+        ]
+    ]},
+    {"dt": "Role Profile", "filters": [
+        [
+            "name", "in", [
+                "Driver"
+            ]
+        ]
+    ]},
+    {"dt": "Role", "filters": [
+        [
+            "name", "in", [
+                "Driver"
+            ]
+        ]
+    ]},
+]

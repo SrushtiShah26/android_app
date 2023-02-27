@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:user",
+ "creation": "2023-02-27 12:35:22.113120",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "android_user_mobile_no",
+  "column_break_4sohl",
+  "name1",
+  "section_break_t5tj7",
+  "otp_creation",
+  "column_break_gvhwf",
+  "creation_time",
+  "column_break_8jz9q",
+  "expiry_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "user.mobile_no",
+   "fieldname": "android_user_mobile_no",
+   "fieldtype": "Data",
+   "label": "Android User Mobile No.",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4sohl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.first_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_t5tj7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "otp_creation",
+   "fieldtype": "Int",
+   "label": "OTP Creation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gvhwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creation_time",
+   "fieldtype": "Datetime",
+   "label": "Creation Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8jz9q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiry_time",
+   "fieldtype": "Datetime",
+   "label": "Expiry Time",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-27 13:38:37.634815",
+ "modified_by": "Administrator",
+ "module": "android_app",
+ "name": "OTP",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
