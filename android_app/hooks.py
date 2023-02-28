@@ -202,27 +202,26 @@ app_license = "MIT"
 
 fixtures=[
     # "Client Script","Item","Website Theme"
-
+    # {"dt": "Role Profile", "filters": [
+    #     [
+    #         "name", "in", [
+    #             "Driver"
+    #         ]
+    #     ]
+    # ]},
+    # {"dt": "Role", "filters": [
+    #     [
+    #         "name", "in", [
+    #             "Driver"
+    #         ]
+    #     ]
+    # ]},
      {"dt": "Client Script", },
      {"dt": "Fast2SMS", },
      {"dt": "Custom Field", "filters": [
         [
             "module", "in", [
                 "android_app"
-            ]
-        ]
-    ]},
-    {"dt": "Role Profile", "filters": [
-        [
-            "name", "in", [
-                "Driver"
-            ]
-        ]
-    ]},
-    {"dt": "Role", "filters": [
-        [
-            "name", "in", [
-                "Driver"
             ]
         ]
     ]},
